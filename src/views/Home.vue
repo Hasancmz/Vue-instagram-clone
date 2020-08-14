@@ -5,17 +5,20 @@
     <CustomText class="a2" tag="span" size="small">MERHABA</CustomText>
     <CustomText class="a3" tag="h6" size="xxsmall">MERHABA</CustomText>
     <CustomText class="a4" tag="h2" size="normal">MERHABA</CustomText>
+    <IconHome />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import CustomText from '@/components/CustomText';
+import IconHome from '../icons/home.svg';
 
 export default {
   name: 'Home',
   components: {
     CustomText,
+    IconHome,
   },
 };
 </script>
