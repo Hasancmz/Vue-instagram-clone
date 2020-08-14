@@ -11,15 +11,15 @@
 
 <script>
 // @ is an alias to /src
-import CustomText from '@/components/CustomText';
-import IconHome from '../icons/home.svg';
+import CustomText from "@/components/CustomText";
+import IconHome from "../icons/home.svg";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     CustomText,
-    IconHome,
-  },
+    IconHome
+  }
 };
 </script>
 
