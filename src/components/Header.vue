@@ -48,9 +48,15 @@ export default {
 
 <style lang="scss" scoped>
 .header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
+  background-color: #fff;
   border-bottom: 1px solid rgba(var(--b6a), 1);
   .header-inner {
-    height: 54px;
+    height: var(--header-height);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -76,11 +82,38 @@ export default {
       display: flex;
       justify-content: flex-end;
       align-items: center;
+
       a {
         margin-left: 22px;
       }
       :first-child {
         margin-left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .header {
+    .header-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .search {
+        display: none;
+      }
+      .navigation {
+        z-index: 50;
+        background-color: #fff;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: space-around;
+        border-top: 1px solid rgba(var(--b6a), 1);
+        height: 54px;
+        a {
+          margin-left: 0;
+        }
       }
     }
   }
