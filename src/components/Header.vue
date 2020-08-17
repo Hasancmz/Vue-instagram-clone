@@ -18,7 +18,9 @@
           <IconExploreFill v-if="$route.name === 'Explore'" />
           <IconExplore v-else />
         </router-link>
-        <router-link to="/profile">Profile</router-link>
+        <router-link to="/profile">
+          <Avatar class="avatar" :size="26" />
+        </router-link>
       </nav>
     </Container>
   </header>
@@ -32,6 +34,7 @@ import IconDirectFill from "@/icons/direct-fill.svg";
 import IconExplore from "@/icons/explore.svg";
 import IconExploreFill from "@/icons/explore-fill.svg";
 import Container from "@/components/Container.vue";
+import Avatar from "@/components/Avatar";
 export default {
   name: "MainHeader",
   components: {
@@ -41,7 +44,8 @@ export default {
     IconDirect,
     IconDirectFill,
     IconExplore,
-    IconExploreFill
+    IconExploreFill,
+    Avatar
   }
 };
 </script>
@@ -88,6 +92,9 @@ export default {
       }
       :first-child {
         margin-left: 0;
+      }
+      .avatar {
+        background: none;
       }
     }
   }
