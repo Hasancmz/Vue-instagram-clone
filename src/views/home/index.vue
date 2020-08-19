@@ -4,28 +4,29 @@
       <Post />
       <br />
       <br />
+      <Post />
       <br />
       <br />
+      <Post />
+
       <br />
       <br />
     </div>
     <div class="sidebar">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa distinctio fugiat placeat consequatur animi cum hic quae minus commodi voluptatem earum repellendus atque facere, impedit vero veniam! Nostrum, eum?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, amet inventore quas molestiae at, accusantium, debitis perferendis aut velit doloremque nihil recusandae aliquam rerum voluptatibus? A tempore tenetur asperiores inventore.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa velit voluptate sunt ab odio architecto tempore numquam modi totam recusandae, odit nemo laudantium dolor eligendi vero dolore iusto quaerat.
-      </p>
+      <Sidebar />
     </div>
   </div>
 </template>
 
 <script>
 import Post from "@/components/Post";
+import Sidebar from "@/components/Sidebar";
 
 export default {
   name: "Home",
   components: {
-    Post
+    Post,
+    Sidebar
   }
 };
 </script>

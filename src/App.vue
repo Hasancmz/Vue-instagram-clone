@@ -23,5 +23,6 @@ export default {
 <style scoped>
 .main {
   padding-top: 30px;
+  background-color: rgba(var(--b3f), 1);
 }
 </style>

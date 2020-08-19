@@ -51,4 +51,5 @@ b,
 strong,
 label {
   font-weight: 600;
+  font-size: inherit;
 }
