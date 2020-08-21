@@ -10,10 +10,6 @@
       width="293px"
       height="293px"
     />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
 </template>
 

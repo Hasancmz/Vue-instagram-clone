@@ -6,17 +6,17 @@
     <div class="router-link">
       <div class="posts">
         <div class="color" v-if="$route.name === 'ProfilePost'">
-          <Posts />
+          <PostsFill />
           <router-link to="/profile">GÖNDERİLER</router-link>
         </div>
         <div v-else>
-          <Posts class="icon" />
+          <Posts />
           <router-link to="/profile">GÖNDERİLER</router-link>
         </div>
       </div>
       <div class="igtv">
         <div class="color" v-if="$route.name === 'ProfileIGTV'">
-          <Igtv />
+          <IgtvFill />
           <router-link to="/profile/igtv">IGTV</router-link>
         </div>
         <div v-else>
@@ -26,7 +26,7 @@
       </div>
       <div class="saved">
         <div class="color" v-if="$route.name === 'ProfileSave'">
-          <Saved />
+          <SavedFill />
           <router-link to="/profile/save">KAYDEDİLENLER</router-link>
         </div>
         <div v-else>
@@ -36,7 +36,7 @@
       </div>
       <div class="tagged">
         <div class="color" v-if="$route.name === 'ProfileTag'">
-          <Tagged />
+          <TaggedFill />
           <router-link to="/profile/tag">ETİKETLENENLER</router-link>
         </div>
         <div v-else>
@@ -46,6 +46,9 @@
       </div>
     </div>
     <router-view />
+    <div class="footer">
+      <ProfileFooter />
+    </div>
   </div>
 </template>
 
@@ -57,6 +60,11 @@ import Posts from "@/icons/posts.svg";
 import Igtv from "@/icons/igtv.svg";
 import Saved from "@/icons/saved.svg";
 import Tagged from "@/icons/tagged.svg";
+import PostsFill from "@/icons/posts-fill.svg";
+import IgtvFill from "@/icons/igtv-fill.svg";
+import SavedFill from "@/icons/saved-fill.svg";
+import TaggedFill from "@/icons/tagged-fill.svg";
+import ProfileFooter from "@/components/ProfileFooter";
 
 export default {
   name: "Profile",
@@ -66,7 +74,12 @@ export default {
     Posts,
     Igtv,
     Saved,
-    Tagged
+    Tagged,
+    ProfileFooter,
+    PostsFill,
+    IgtvFill,
+    SavedFill,
+    TaggedFill
   }
 };
 </script>
