@@ -75,4 +75,28 @@ export default {
     }
   }
 }
+@media screen and (max-width: 680px) {
+  .footer {
+    padding: 15px 0;
+    .tab {
+      ul {
+        display: block;
+        max-width: 330px;
+        margin: 0 auto;
+        margin-bottom: 7px;
+        text-align: center;
+        li {
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+    }
+    .info {
+      text-align: center;
+      p {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
 </style>

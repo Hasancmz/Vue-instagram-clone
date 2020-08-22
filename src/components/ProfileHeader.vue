@@ -3,7 +3,7 @@
     <div class="profile-inner">
       <div class="profile-photo">
         <a href title="Profil Fotoğrafını Değiştir">
-          <Avatar :size="155" alt="Profil Fotoğrafını Değiştir" />
+          <Avatar alt="Profil Fotoğrafını Değiştir" />
         </a>
       </div>
       <div class="profile-info">
@@ -33,9 +33,18 @@
       </div>
     </div>
     <div class="story">
-      <StoryImage />
-      <StoryImage />
-      <StoryImage />
+      <div>
+        <StoryImage class="dimension" />
+        <CustomText tag="p">Öne çıkanlar</CustomText>
+      </div>
+      <div>
+        <StoryImage class="dimension" />
+        <CustomText tag="p">Öne çıkanlar</CustomText>
+      </div>
+      <div>
+        <StoryImage class="dimension" />
+        <CustomText tag="p">Öne çıkanlar</CustomText>
+      </div>
     </div>
   </div>
 </template>
@@ -68,6 +77,8 @@ export default {
       justify-content: center;
       .avatar {
         background: none;
+        width: 155px;
+        height: 155px;
       }
     }
     .profile-info {
@@ -105,6 +116,64 @@ export default {
   }
   .story {
     display: flex;
+    .dimension {
+      width: 87px;
+      height: 87px;
+    }
+    p {
+      font-weight: 500;
+      margin-top: 5px;
+      margin-left: 50px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .profile-header {
+    .profile-inner {
+      display: flex;
+      grid-gap: 5px;
+      .profile-photo {
+        margin: 0 10px;
+        .avatar {
+          width: 85px;
+          height: 85px;
+        }
+      }
+      .profile-info {
+        .top {
+          h2 {
+            font-size: 24px;
+          }
+          a {
+            margin-left: 5px;
+          }
+          svg {
+            margin-left: 5px;
+          }
+        }
+        .middle {
+          .mr {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .story {
+      .dimension {
+        width: 60px;
+        height: 60px;
+        margin-left: 5px;
+        margin-right: 12px;
+      }
+      p {
+        font-weight: 500;
+        margin-top: 5px;
+        font-size: 12px;
+        margin-left: 0;
+      }
+    }
   }
 }
 </style>

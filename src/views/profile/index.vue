@@ -6,42 +6,58 @@
     <div class="router-link">
       <div class="posts">
         <div class="color" v-if="$route.name === 'ProfilePost'">
-          <PostsFill />
-          <router-link to="/profile">GÖNDERİLER</router-link>
+          <router-link to="/profile">
+            <PostsFill />
+            <span>GÖNDERİLER</span>
+          </router-link>
         </div>
         <div v-else>
-          <Posts />
-          <router-link to="/profile">GÖNDERİLER</router-link>
+          <router-link to="/profile">
+            <Posts />
+            <span>GÖNDERİLER</span>
+          </router-link>
         </div>
       </div>
       <div class="igtv">
         <div class="color" v-if="$route.name === 'ProfileIGTV'">
-          <IgtvFill />
-          <router-link to="/profile/igtv">IGTV</router-link>
+          <router-link to="/profile/igtv">
+            <IgtvFill />
+            <span>IGTV</span>
+          </router-link>
         </div>
         <div v-else>
-          <Igtv />
-          <router-link to="/profile/igtv">IGTV</router-link>
+          <router-link to="/profile/igtv">
+            <Igtv />
+            <span>IGTV</span>
+          </router-link>
         </div>
       </div>
       <div class="saved">
         <div class="color" v-if="$route.name === 'ProfileSave'">
-          <SavedFill />
-          <router-link to="/profile/save">KAYDEDİLENLER</router-link>
+          <router-link to="/profile/save">
+            <SavedFill />
+            <span>KAYDEDİLENLER</span>
+          </router-link>
         </div>
         <div v-else>
-          <Saved />
-          <router-link to="/profile/save">KAYDEDİLENLER</router-link>
+          <router-link to="/profile/save">
+            <Saved />
+            <span>KAYDEDİLENLER</span>
+          </router-link>
         </div>
       </div>
       <div class="tagged">
         <div class="color" v-if="$route.name === 'ProfileTag'">
-          <TaggedFill />
-          <router-link to="/profile/tag">ETİKETLENENLER</router-link>
+          <router-link to="/profile/tag">
+            <TaggedFill />
+            <span>ETİKETLENENLER</span>
+          </router-link>
         </div>
         <div v-else>
-          <Tagged />
-          <router-link to="/profile/tag">ETİKETLENENLER</router-link>
+          <router-link to="/profile/tag">
+            <Tagged />
+            <span>ETİKETLENENLER</span>
+          </router-link>
         </div>
       </div>
     </div>
@@ -112,6 +128,20 @@ export default {
     }
     .color {
       color: #333;
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  .profile {
+    .router-link {
+      justify-content: space-evenly;
+      span {
+        display: none;
+      }
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
