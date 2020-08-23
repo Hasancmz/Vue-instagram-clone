@@ -12,7 +12,7 @@
       <br />
       <br />
     </div>
-    <div class="sidebar">
+    <div class="sidebar-container">
       <Sidebar />
     </div>
   </div>
@@ -43,7 +43,7 @@ export default {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    .sidebar {
+    .sidebar-container {
       display: none;
     }
   }

@@ -51,10 +51,9 @@ export default {
 <style lang="scss" scoped>
 .sidebar {
   position: fixed;
-  max-width: 295px;
-  left: 849px;
+  width: 295px;
   top: 88px;
-  right: 0;
+
   .profile-bar {
     height: 120px;
     display: flex;
