@@ -5,7 +5,7 @@
         <Avatar :size="36" />
         <div class="header-author-info">
           <div>
-            <CustomText tag="b">hcamozu</CustomText>
+            <CustomText tag="a" href="/profile">hcamozu</CustomText>
           </div>
           <div>
             <CustomText size="xsmall">Montreal, Quebec</CustomText>
@@ -44,7 +44,7 @@
     <div class="comment section">
       <div class="author">
         <CustomText tag="a" href="#">hcamozu</CustomText>
-        <CustomText tag="span">Kazak fiyatlarımız aşağıda mevcuttur.</CustomText>
+        <CustomText tag="span">Kazak modellerimiz.</CustomText>
       </div>
       <div class="comment-look">
         <CustomText tag="a" href="#">247 yorumun tümünü gör</CustomText>
@@ -112,6 +112,9 @@ export default {
       align-items: center;
       .header-author-info {
         margin-left: 16px;
+        a {
+          font-weight: 600;
+        }
       }
     }
   }

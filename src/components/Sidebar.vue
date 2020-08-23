@@ -5,7 +5,7 @@
         <Avatar class="avatar" :size="60" />
       </div>
       <div class="text-name">
-        <CustomText tag="a" href size="normal">hcamozu</CustomText>
+        <CustomText tag="a" href="/profile" size="normal">hcamozu</CustomText>
         <CustomText size="small" tag="p">Hasan Çamözü</CustomText>
       </div>
     </div>

@@ -33,16 +33,16 @@
       </div>
     </div>
     <div class="story">
-      <div>
-        <StoryImage class="dimension" />
+      <div class="story-container">
+        <StoryImage class="size" />
         <CustomText tag="p">Öne çıkanlar</CustomText>
       </div>
-      <div>
-        <StoryImage class="dimension" />
+      <div class="story-container">
+        <StoryImage class="size" />
         <CustomText tag="p">Öne çıkanlar</CustomText>
       </div>
-      <div>
-        <StoryImage class="dimension" />
+      <div class="story-container">
+        <StoryImage class="size" />
         <CustomText tag="p">Öne çıkanlar</CustomText>
       </div>
     </div>
@@ -116,15 +116,19 @@ export default {
   }
   .story {
     display: flex;
-    .dimension {
-      width: 87px;
-      height: 87px;
-    }
-    p {
-      font-weight: 500;
-      margin-top: 5px;
-      margin-left: 50px;
-      font-size: 14px;
+    margin-left: 48px;
+    .story-container {
+      text-align: center;
+      margin-right: 25px;
+      .size {
+        width: 87px;
+        height: 87px;
+      }
+      p {
+        font-weight: 500;
+        margin-top: 5px;
+        font-size: 14px;
+      }
     }
   }
 }
@@ -161,17 +165,20 @@ export default {
       }
     }
     .story {
-      .dimension {
-        width: 60px;
-        height: 60px;
-        margin-left: 5px;
-        margin-right: 12px;
-      }
-      p {
-        font-weight: 500;
-        margin-top: 5px;
-        font-size: 12px;
-        margin-left: 0;
+      margin-left: 5px;
+      .story-container {
+        .size {
+          width: 60px;
+          height: 60px;
+          margin-left: 5px;
+          margin-right: 12px;
+        }
+        p {
+          font-weight: 500;
+          margin-top: 5px;
+          font-size: 12px;
+          margin-left: 0;
+        }
       }
     }
   }
