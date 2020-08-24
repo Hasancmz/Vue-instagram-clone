@@ -14,18 +14,22 @@
       <DirectPerson />
     </div>
 
-    <div class="message-section"></div>
+    <div class="message-section">
+      <DirectMessage />
+    </div>
   </div>
 </template>
 
 <script>
 import DirectPerson from "@/components/DirectPerson";
 import DirectTopBar from "@/components/DirectTopBar";
+import DirectMessage from "@/components/DirectMessage";
 export default {
   name: "Direct",
   components: {
     DirectPerson,
-    DirectTopBar
+    DirectTopBar,
+    DirectMessage
   }
 };
 </script>
@@ -41,8 +45,12 @@ export default {
     overflow-y: scroll;
   }
   .message-section {
-    background-color: brown;
     height: 82vh;
+  }
+}
+@media screen and (max-width: 680px) {
+  .direct {
+    grid-template-columns: 1fr 1fr;
   }
 }
 </style>

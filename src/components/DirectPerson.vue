@@ -7,7 +7,10 @@
         </div>
         <div class="text-name">
           <CustomText tag="a" href="/profile" size="normal">hcamozu</CustomText>
-          <CustomText size="small" tag="p">Hasan Çamözü</CustomText>
+          <CustomText size="small" tag="p">Görüşürüz</CustomText>
+        </div>
+        <div class="day">
+          <CustomText tag="span">1g</CustomText>
         </div>
       </div>
     </a>
@@ -50,6 +53,10 @@ export default {
           color: rgba(var(--f52), 1);
           font-size: 13px;
         }
+      }
+      .day {
+        margin-left: 5px;
+        color: rgba(var(--f52), 1);
       }
     }
     :hover {
