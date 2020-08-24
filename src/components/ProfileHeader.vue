@@ -166,6 +166,7 @@ export default {
     .story {
       margin-left: 5px;
       .story-container {
+        margin-right: 5px;
         .size {
           width: 60px;
           height: 60px;
