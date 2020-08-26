@@ -1,20 +1,40 @@
 <template>
   <div class="direct">
-    <div class="left-bar">
-      <DirectTopBar />
-      <DirectPerson />
-      <DirectPerson />
-      <DirectPerson />
-      <DirectPerson />
-      <DirectPerson />
-      <DirectPerson />
-      <DirectPerson />
-      <DirectPerson />
-      <DirectPerson />
-      <DirectPerson />
+    <div class="direct-pc">
+      <div class="left-bar">
+        <DirectTopBar />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+      </div>
+      <div class="message-section">
+        <DirectMessage />
+      </div>
     </div>
-    <div class="message-section">
-      <DirectMessage />
+    <div class="mobile">
+      <div class="left-bar" v-if="$route.path === '/direct'">
+        <DirectTopBar />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+        <DirectPerson />
+      </div>
+      <div class="message-section" v-else>
+        <DirectMessage />
+      </div>
     </div>
   </div>
 </template>
@@ -35,30 +55,65 @@ export default {
 
 <style scoped lang="scss">
 .direct {
-  display: grid;
-  grid-template-columns: 1.2fr 2fr;
-  border: 1px solid rgba(var(--b38), 1);
-  .left-bar {
-    height: 82vh;
-
-    overflow-y: scroll;
+  .direct-pc {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    border: 1px solid rgba(var(--b38), 1);
+    .left-bar {
+      height: 82vh;
+      overflow-y: scroll;
+    }
+    .message-section {
+      height: 82vh;
+    }
   }
-  .message-section {
-    height: 82vh;
+  .mobile {
+    display: none;
   }
 }
+
 @media screen and (max-width: 680px) {
   .direct {
-    grid-template-columns: 1fr 1fr;
+    .direct-pc {
+      grid-template-columns: 1fr 1fr;
+    }
+    .mobile {
+      display: none;
+    }
   }
 }
 @media screen and (max-width: 980px) {
   .direct {
-    .left-bar {
-      height: 73vh;
+    .direct-pc {
+      .left-bar {
+        height: 73vh;
+      }
+      .message-section {
+        height: 73vh;
+      }
     }
-    .message-section {
-      height: 73vh;
+    .mobile {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .direct {
+    .direct-pc {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      display: grid;
+      grid-template-columns: 1fr;
+      border: 1px solid rgba(var(--b38), 1);
+      .left-bar {
+        height: 75vh;
+        overflow-y: scroll;
+      }
+      .message-section {
+        height: 80vh;
+      }
     }
   }
 }

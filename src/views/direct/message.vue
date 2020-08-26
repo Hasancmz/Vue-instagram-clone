@@ -90,4 +90,9 @@ export default {
     height: 73vh;
   }
 }
+@media screen and (max-width: 500px) {
+  .message {
+    height: 78vh;
+  }
+}
 </style>
