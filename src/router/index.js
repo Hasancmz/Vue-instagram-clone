@@ -14,6 +14,16 @@ const routes = [
     path: '/direct',
     name: 'Direct',
     component: () => import(/* webpackChunkName: "direct" */ '../views/direct'),
+    children: [
+      {
+        path: 'message',
+        name: 'DirectMessage',
+        component: () =>
+          import(
+            /* webpackChunkName: "directMessage" */ '../views/direct/message'
+          ),
+      },
+    ],
   },
   {
     path: '/explore',

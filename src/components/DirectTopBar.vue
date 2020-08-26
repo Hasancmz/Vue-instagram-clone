@@ -1,7 +1,7 @@
 <template>
   <div class="top-section">
     <div class="direct-bar">
-      <CustomText tag="p">Direct</CustomText>
+      <CustomText tag="a" href="/direct">Direct</CustomText>
       <NewMessage />
     </div>
   </div>
@@ -33,7 +33,7 @@ export default {
     position: relative;
     align-items: center;
     justify-content: center;
-    p {
+    a {
       font-weight: 600;
       font-size: 16px;
     }

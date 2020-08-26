@@ -1,18 +1,20 @@
 <template>
   <div class="box">
     <a class="profile-section" href>
-      <div class="profile-bar">
-        <div class="photo">
-          <Avatar class="avatar" :size="55" />
+      <router-link to="/direct/message">
+        <div class="profile-bar">
+          <div class="photo">
+            <Avatar class="avatar" :size="55" />
+          </div>
+          <div class="text-name">
+            <CustomText tag="a" href="/profile" size="normal">hcamozu</CustomText>
+            <CustomText size="small" tag="p">Görüşürüz</CustomText>
+          </div>
+          <div class="day">
+            <CustomText tag="span">1g</CustomText>
+          </div>
         </div>
-        <div class="text-name">
-          <CustomText tag="a" href="/profile" size="normal">hcamozu</CustomText>
-          <CustomText size="small" tag="p">Görüşürüz</CustomText>
-        </div>
-        <div class="day">
-          <CustomText tag="span">1g</CustomText>
-        </div>
-      </div>
+      </router-link>
     </a>
   </div>
 </template>

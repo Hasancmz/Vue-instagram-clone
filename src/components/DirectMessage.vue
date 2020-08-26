@@ -1,19 +1,24 @@
 <template>
-  <div class="direct-message">
-    <div class="icon-center">
-      <div class="icon">
-        <Direct />
-      </div>
+  <div class="direct-section">
+    <div v-if="$route.path === '/direct/message'">
+      <router-view />
     </div>
 
-    <div class="msg">
-      <CustomText>Mesajların</CustomText>
-    </div>
-    <div class="msg-description">
-      <CustomText tag="p">Bir arkadaşına veya gruba gizli fotoğraflar ve mesajlar gönder.</CustomText>
-    </div>
-    <div class="button">
-      <CustomText tag="a" href>Mesaj Gönder</CustomText>
+    <div class="direct-message" v-else>
+      <div class="icon-center">
+        <div class="icon">
+          <Direct />
+        </div>
+      </div>
+      <div class="msg">
+        <CustomText>Mesajların</CustomText>
+      </div>
+      <div class="msg-description">
+        <CustomText tag="p">Bir arkadaşına veya gruba gizli fotoğraflar ve mesajlar gönder.</CustomText>
+      </div>
+      <div class="button">
+        <CustomText tag="a" href>Mesaj Gönder</CustomText>
+      </div>
     </div>
   </div>
 </template>

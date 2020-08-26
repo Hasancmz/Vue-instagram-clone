@@ -20,7 +20,7 @@
 import CustomText from "@/components/CustomText";
 
 export default {
-  name: "ProfileIGTV",
+  name: "ProfileTag",
   components: {
     CustomText
   }

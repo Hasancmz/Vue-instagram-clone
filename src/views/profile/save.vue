@@ -22,7 +22,7 @@
 import CustomText from "@/components/CustomText";
 
 export default {
-  name: "ProfileIGTV",
+  name: "ProfileSave",
   components: {
     CustomText
   }

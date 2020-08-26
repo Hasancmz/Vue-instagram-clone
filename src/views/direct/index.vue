@@ -13,7 +13,6 @@
       <DirectPerson />
       <DirectPerson />
     </div>
-
     <div class="message-section">
       <DirectMessage />
     </div>
@@ -51,6 +50,16 @@ export default {
 @media screen and (max-width: 680px) {
   .direct {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 980px) {
+  .direct {
+    .left-bar {
+      height: 73vh;
+    }
+    .message-section {
+      height: 73vh;
+    }
   }
 }
 </style>
