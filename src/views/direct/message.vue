@@ -92,7 +92,7 @@ export default {
 }
 @media screen and (max-width: 500px) {
   .message {
-    height: 78vh;
+    height: 80vh;
   }
 }
 </style>

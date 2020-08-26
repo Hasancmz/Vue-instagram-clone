@@ -99,6 +99,10 @@ export default {
 }
 @media screen and (max-width: 500px) {
   .direct {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
     .direct-pc {
       display: none;
     }
@@ -108,11 +112,11 @@ export default {
       grid-template-columns: 1fr;
       border: 1px solid rgba(var(--b38), 1);
       .left-bar {
-        height: 75vh;
+        height: 78vh;
         overflow-y: scroll;
       }
       .message-section {
-        height: 80vh;
+        height: 83vh;
       }
     }
   }
