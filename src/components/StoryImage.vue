@@ -1,7 +1,7 @@
 <template>
   <figure class="profile-story">
     <a href>
-      <img :src="src" alt />
+      <img src="../assets/story.jpg" alt />
     </a>
   </figure>
 </template>
@@ -12,8 +12,8 @@ export default {
   props: {
     src: {
       type: String,
-      default:
-        "https://instagram.fesb1-1.fna.fbcdn.net/v/t51.12442-15/e35/c0.473.1081.1081a/s150x150/61931226_175296770141317_1515863713517610052_n.jpg?_nc_ht=instagram.fesb1-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=Sj6XTkbMgmsAX-dYIYJ&oh=5d38231a52b03cc80c72206525c670ec&oe=5F4894E9"
+      
+        
     }
   }
 };

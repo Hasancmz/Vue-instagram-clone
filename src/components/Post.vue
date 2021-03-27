@@ -20,7 +20,7 @@
     </header>
     <div class="post-media">
       <img
-        src="https://instagram.fist6-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/117325081_976996139418353_8160924534914653455_n.jpg?_nc_ht=instagram.fist6-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=jNBXBif9ELAAX8crGcC&oh=573d873be16560be501f2567940481f4&oe=5F604180"
+        src="../assets/kazak.jpg"
         alt
       />
     </div>
@@ -44,7 +44,7 @@
     <div class="comment section">
       <div class="author">
         <CustomText tag="a" href="#">hcamozu</CustomText>
-        <CustomText tag="span">Kazak modellerimiz.</CustomText>
+        <CustomText tag="span">Lorem</CustomText>
       </div>
       <div class="comment-look">
         <CustomText tag="a" href="#">247 yorumun tümünü gör</CustomText>
@@ -52,11 +52,11 @@
       <div class="other-comment">
         <div>
           <CustomText tag="a" href="#">farukptz</CustomText>
-          <CustomText tag="span">Fiyatlarda indirim var mı?</CustomText>
+          <CustomText tag="span">deneme</CustomText>
         </div>
         <div>
           <CustomText tag="a" href="#">eslinkyn</CustomText>
-          <CustomText tag="span">Gerçekten çok güzeller.</CustomText>
+          <CustomText tag="span">xox</CustomText>
         </div>
       </div>
       <div class="time">
@@ -89,8 +89,8 @@ export default {
     IconLike,
     IconComment,
     IconDirect,
-    IconSave
-  }
+    IconSave,
+  },
 };
 </script>
 

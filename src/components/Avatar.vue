@@ -11,15 +11,15 @@ export default {
     src: {
       type: String,
       default:
-        "https://instagram.fesb2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/44382143_2058374967564528_2753074367448481792_n.jpg?_nc_ht=instagram.fesb2-1.fna.fbcdn.net&_nc_ohc=xLi88s2w6F0AX-vq-AP&oh=40dab3ae4d4c3b39053bcd1189934ff3&oe=5F65EA84"
+        "https://instagram.fesb2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/44382143_2058374967564528_2753074367448481792_n.jpg?tp=1&_nc_ht=instagram.fesb2-1.fna.fbcdn.net&_nc_ohc=4HnlP304G1kAX8_0vbl&oh=d0aa321d6fa0476714c348bc98e08a22&oe=60630A84",
     },
     alt: {
-      type: String
+      type: String,
     },
     size: {
-      type: Number
-    }
-  }
+      type: Number,
+    },
+  },
 };
 </script>
 

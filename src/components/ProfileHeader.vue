@@ -13,18 +13,12 @@
           <Settings />
         </div>
         <div class="middle">
+          <CustomText class="mr"> <b>2</b> gönderi </CustomText>
           <CustomText class="mr">
-            <b>2</b> gönderi
-          </CustomText>
-          <CustomText class="mr">
-            <a href>
-              <b>168</b> takipçi
-            </a>
+            <a href> <b>168</b> takipçi </a>
           </CustomText>
           <CustomText>
-            <a href>
-              <b>161</b> takip
-            </a>
+            <a href> <b>161</b> takip </a>
           </CustomText>
         </div>
         <div class="bottom">
@@ -34,13 +28,16 @@
     </div>
     <div class="story">
       <div class="story-container">
-        <StoryImage class="size" />
+        <StoryImage
+          class="size"
+          src="https://instagram.fesb6-1.fna.fbcdn.net/v/t51.12442-15/e35/c0.473.1081.1081a/s150x150/61931226_175296770141317_1515863713517610052_n.jpg?tp=1&_nc_ht=instagram.fesb6-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=BiGTQ45zm28AX-AMg9e&oh=cede0be4640df8fdb42460521aa85f34&oe=60470669"
+        />
         <CustomText tag="p">Öne çıkanlar</CustomText>
       </div>
       <div class="story-container">
         <StoryImage
           class="size"
-          src="https://instagram.fesb1-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/30890608_218466038918929_108432230413500416_n.jpg?_nc_ht=instagram.fesb1-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=px3nY2n_2BQAX8LhKcN&oh=35caaed2ea6e93d6640b8cc97c8b5ab6&oe=5F697CC5"
+          src="https://instagram.fesb6-1.fna.fbcdn.net/v/t51.12442-15/e35/c0.473.1081.1081a/s150x150/61931226_175296770141317_1515863713517610052_n.jpg?tp=1&_nc_ht=instagram.fesb6-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=BiGTQ45zm28AX-AMg9e&oh=cede0be4640df8fdb42460521aa85f34&oe=60470669"
         />
         <CustomText tag="p">Öne çıkanlar</CustomText>
       </div>
@@ -59,8 +56,8 @@ export default {
     Avatar,
     CustomText,
     Settings,
-    StoryImage
-  }
+    StoryImage,
+  },
 };
 </script>
 

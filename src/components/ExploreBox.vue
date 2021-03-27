@@ -15,7 +15,7 @@ export default {
     src: {
       type: String,
       default:
-        "https://instagram.fesb2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.129.1080.1080a/s640x640/118254876_400826077988652_2880450372014237813_n.jpg?_nc_ht=instagram.fesb2-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=FR1wwdXGL7wAX-0k5mQ&oh=e852138b9baaca373cd0504381e3fbeb&oe=5F6BF8CA"
+        "https://instagram.fesb6-1.fna.fbcdn.net/v/t51.2885-15/e35/c0.180.1440.1440a/s320x320/157060992_114869507212560_4410298960957639187_n.jpg?tp=1&_nc_ht=instagram.fesb6-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=P2doCJ4gFiwAX_hHH4H&oh=e7d6e1209b221b1cdb3e57efaabfb9f3&oe=606EC4D5",
     }
   }
 };
