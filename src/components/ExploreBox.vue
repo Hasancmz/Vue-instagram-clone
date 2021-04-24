@@ -2,7 +2,7 @@
   <div class="box">
     <figure>
       <a href>
-        <img :src="src" alt />
+        <img src="@/assets/img/landscape.jpg" alt />
       </a>
     </figure>
   </div>

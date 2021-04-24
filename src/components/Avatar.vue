@@ -1,6 +1,6 @@
 <template>
   <figure class="avatar">
-    <img :src="src" :alt="alt" :width="size" :height="size" />
+    <img src="@/assets/img/profile-photo.jpg" :alt="alt" :width="size" :height="size" />
   </figure>
 </template>
 

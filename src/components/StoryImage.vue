@@ -1,7 +1,7 @@
 <template>
   <figure class="profile-story">
     <a href>
-      <img src="../assets/story.jpg" alt />
+      <img src="../assets/img/story.jpg" alt />
     </a>
   </figure>
 </template>

@@ -20,7 +20,7 @@
     </header>
     <div class="post-media">
       <img
-        src="../assets/kazak.jpg"
+        src="../assets/img/kazak.jpg"
         alt
       />
     </div>
